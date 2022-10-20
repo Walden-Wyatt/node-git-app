@@ -18,7 +18,7 @@ const _actualData = document.querySelector( "#_actualData" );
 
  const _address = _input.value;
 
- const _url = `http://localhost:4000/weather?address=${_address}`;
+ const _url = `/weather?address=${_address}`;
 
  fetch( _url  ).then( (response) => {
 
