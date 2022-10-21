@@ -12,6 +12,8 @@
 
  var port = process.env.PORT || 8000;
 
+ 
+
  // load path module
 
  let _path = require("path" );
@@ -65,6 +67,8 @@
 //   res.send( "Home page" );
 
 res.render( "index" , { _prop: "Index Page" } );
+
+console.log( port );
 
   
  });
