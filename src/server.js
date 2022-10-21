@@ -31,7 +31,7 @@
 
  _app.set( "view engine" , "hbs" );
 
- _app.set("views" , _path.join( __dirname , "/templetes_hbs" ));
+ _app.set("views" , _path.join( __dirname , "../templetes_hbs" ));
 
  _app.engine( "hbs" , require( "hbs").__express );
 
@@ -42,7 +42,7 @@
 
  const _hbs = require("hbs" );
 
- _hbs.registerPartials( _path.join( __dirname, "/partials" ));
+ _hbs.registerPartials( _path.join( __dirname, "../partials" ));
 
 
 
@@ -52,7 +52,7 @@
  // loading static assets
 
 
-  _app.use( _express.static( _path.join( __dirname , "/static_assets" )));
+  _app.use( _express.static( _path.join( __dirname , "../static_assets" )));
 
   
 
