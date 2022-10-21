@@ -10,7 +10,7 @@
 
  let _app = _express();
 
- let _port = process.env.PORT || 4000
+ var port = process.env.PORT || 8000;
 
  // load path module
 
@@ -126,13 +126,13 @@ res.render( "index" , { _prop: "Index Page" } );
   });
 
 
-  
+
 
 
 
  // create server using _app
 
- _app.listen( _port , () => {
+ _app.listen( port , () => {
 
   console.log("Server running in the port 4000" );
 
