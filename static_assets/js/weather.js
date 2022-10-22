@@ -3,9 +3,6 @@
 
 
 
-
-
-
 const _input = document.querySelector("input");
 const _form = document.querySelector("form" );
 const _forError = document.querySelector("#_forError" );
@@ -25,7 +22,22 @@ const _actualData = document.querySelector( "#_actualData" );
 
   response.json().then( (data) => {
 
-  console.log( data );
+ if( data.error ) {
+
+    _forError.textContent = data.error;
+
+    _actualData.textContent = " ";
+  
+ }
+
+ else {
+
+  _forError.textContent = " ";
+
+  _actualData.textContent = data._forecast_Data;
+  
+
+ }
 
   })
  })
