@@ -16,7 +16,7 @@ const _actualData = document.querySelector( "#_actualData" );
 
  const _address = _input.value;
 
- const _url = `https://busy-pear-kitten-sari.cyclic.app/weather?address=${_address}`;
+ const _url = `/weather?address=${_address}`;
 
  fetch( _url  ).then( (response) => {
 
@@ -35,7 +35,7 @@ const _actualData = document.querySelector( "#_actualData" );
   _forError.textContent = " ";
 
   _actualData.textContent = data._forecast_Data;
-  
+
 
  }
 
